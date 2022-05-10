@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formularz 1</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<header><big><a href="Formularz1.html"><button id="tak">Formularz 1</button></a>   <a href="Formularz2.html"><button>Formularz 2</button></a><a href="Formularz3.html"><button>Formularz 3</button></a><a href="Formularz4.html"><button>Formularz 4</button></a><a href="Formularz5.html"><button>Formularz 5</button></a><a href="Formularz6.html"><button>Formularz 6</button></a></big></header><center>
+<form action="mailto:michal.zakrzewski@tm1.edu.pl" method="post">
+	<label>Nazwisko:</label><br />
+	<input type="text" name="Nazwisko" size="30"/><br />
+	<label>Imię:</label><br />
+	<input type="text" name="Imię" size="30"/><br /><br />
+
+	<label>Wykształcenie:</label><br />
+	<input type="radio" name="Wykształcenie" value="podstawowe" checked />Podstawowe<br />
+	<input type="radio" name="Wykształcenie" value="średnie"  />Średnie<br />
+	<input type="radio" name="Wykształcenie" value="wyższe"  />Wyższe<br /><br />
+
+	W jakim języku programujesz?<br />
+	<input type="checkbox" name="progr[]" value="PhP"  />PhP<br />
+	<input type="checkbox" name="progr[]" value="JavaScript"  />JavaScript<br />
+	<input type="checkbox" name="progr[]" value="Python"  />Python<br />
+	<input type="checkbox" name="progr[]" value="C++"  />C++<br />
+	<input type="checkbox" name="progr[]" value="Java"  />Java<br /><br />
+
+	<input type="checkbox" name="opcje" maxlengh="1"/>Zgadzam się na przetwarzanie danych osobowych<br /><br />
+
+	<br />Wiek:<br />
+	<select name="wiek">
+			<option>0-17</option>
+			<option>18-40</option>
+			<option>41-60</option>
+			<option>60></option>
+		</select><br />
+
+		<br />Uwagi:<br />
+		<Textarea rows="6" cells="17">Wpisz uwagi</Textarea>
+
+		<br /><br />
+
+		<input class="button" type="submit" name="wyślij" value="Wyślij"/>
+		<input class="button" type="reset" name="zeruj" value="Wyczyść"/>
+	</form>
+</center>
+<footer><h1>Michał Zakrzewski</h1></footer>
+	</body>
+</html>
